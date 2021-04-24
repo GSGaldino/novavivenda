@@ -1,0 +1,41 @@
+.contato {
+  position: relative
+}
+
+.contato:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("/splashes.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-position-y: -40px;
+  padding: 140px 0px;
+  background-size: 44%;
+  z-index: -1;
+}
+
+.contato h3 {
+  font-family: "Lemonmilk Bold";
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 4.5rem;
+  color: var(--primary-color);
+}
+
+.flexSection {
+  display: flex;
+  justify-content: space-between;
+  max-height: 460px;
+  overflow: hidden;
+  box-shadow: var(--left-box-shadow);
+}
+
+.flexSection .item:last-child img{
+  margin-top: -40px;
+  margin-left: 20px;
+}

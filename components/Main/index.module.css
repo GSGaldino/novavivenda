@@ -1,0 +1,42 @@
+.main {
+  background: url('/bg-section-2.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  padding-top: 80px;
+}
+
+.item:first-child {
+  width: 58%;
+}
+
+.item p {
+  margin: 40px auto;
+  color: var(--text-color);
+}
+
+.item h3 {
+  font-family: "Lemonmilk Bold";
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 4.5rem;
+}
+
+.item h3.primary {
+  color: var(--primary-color);
+}
+
+.item h3.secondary {
+  text-shadow: -2px 2px var(--primary-color), -2px -2px var(--primary-color), 2px -2px var(--primary-color), 2px 2px var(--primary-color);
+  color: var(--background-light);
+}
+
+.item .button {
+  color: var(--background-light);
+  width: 360px;
+  font-weight: 600;
+  box-shadow: var(--left-box-shadow);
+}
+
+.item .button:hover {
+  box-shadow: var(--left-box-shadow);
+}

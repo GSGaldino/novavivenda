@@ -1,0 +1,36 @@
+:root {
+  --background-light: #F2FDFF;
+  --primary-color: #34C1C0;
+  --text-color: #1B2021;
+  --left-box-shadow: rgba(0, 0, 0, 0.4) 0px 25px 50px -12px;
+}
+
+@font-face {
+  font-family: "Lemonmilk Bold";
+  font-style: normal;
+	font-weight: normal;
+	font-display: auto;
+	src: url('/fonts/lemonmilk-bold.ttf');
+}
+
+@font-face {
+	font-family: 'Lemonmilk';
+	font-style: normal;
+	font-weight: normal;
+	font-display: auto;
+	src: url('/fonts/lemonmilk.ttf') format('truetype');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background-light);
+}
