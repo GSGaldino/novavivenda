@@ -1,7 +1,7 @@
 .depoimentos {
   background: var(--background-light);
   padding: 40px;
-  margin: 20px auto;
+  margin: 40px auto;
 }
 
 .depoimentos h3 {
@@ -31,6 +31,51 @@
 
 .carouselProvider {
   position: relative;
+  height: 360px;
+}
+
+.slideItem {
+  display: flex;
+  box-shadow: var(--left-box-shadow);
+  width: 90%;
+  margin: 0 auto;
+}
+
+.slideItem .thumb {
+  margin-bottom: -4px;
+}
+
+.slideItem .thumb img {
+  position: relative;
+  max-width: 100%;
+}
+
+.slideItem .content{
+  background: var(--white-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 20px;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.slideItem .content h3 {
+  margin: 0px auto;
+  line-height: 42px;
+  text-align: left;
+}
+
+.slideItem .content h3:first-child {
+  color: #5C6264;
+}
+
+.slideItem .footer p {
+  color: var(--primary-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  margin-top: 8px;
+  font-size: 18px;
 }
 
 .button:selected,
@@ -72,6 +117,30 @@
     line-height: 4.5rem;
     text-align: left;
     margin-top: 20px;
+  }
+
+  .carouselProvider {
+    height: 900px;
+  }
+
+  .slideItem {
+    flex-direction: column;
+  }
+
+  .slideItem .content {
+    padding: 20px 10px;
+  }
+
+  .slideItem .content div:nth-child(2){
+    margin: 20px auto;
+  }
+
+  .button.prev {
+    left: -10px;
+  }
+
+  .button.next {
+    right: -10px;
   }
 
 }
