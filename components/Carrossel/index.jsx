@@ -63,7 +63,7 @@ export default function Depoimentos(props) {
         <div className={styles.carouselContainer}>
           <CarouselProvider
             naturalSlideWidth={100}
-            naturalSlideHeight={900}
+            naturalSlideHeight={800}
             totalSlides={4}
             className={styles.carouselProvider}
             isPlaying={true}

@@ -31,7 +31,8 @@
 
 .carouselProvider {
   position: relative;
-  height: 360px;
+  height: 440px;
+  overflow-y: hidden;
 }
 
 .slideItem {
@@ -43,11 +44,14 @@
 
 .slideItem .thumb {
   margin-bottom: -4px;
+  width: 30%;
 }
 
 .slideItem .thumb img {
   position: relative;
   max-width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .slideItem .content{
@@ -58,6 +62,7 @@
   padding: 40px 20px;
   align-items: flex-start;
   text-align: left;
+  width: 70%;
 }
 
 .slideItem .content h3 {
@@ -86,7 +91,7 @@
 
 .button {
   position: absolute;
-  top: 50%;
+  top: 36%;
   background: var(--white-light);
   border: none;
   padding: 8px;
@@ -125,22 +130,33 @@
 
   .slideItem {
     flex-direction: column;
+    width: 100%;
+    height: 1000px;
+  }
+
+  .slideItem .thumb {
+    width: inherit;
   }
 
   .slideItem .content {
     padding: 20px 10px;
+    width: 100%;
   }
 
   .slideItem .content div:nth-child(2){
     margin: 20px auto;
   }
 
+  .button {
+    top: 60%;
+  }
+
   .button.prev {
-    left: -10px;
+    left: -20px;
   }
 
   .button.next {
-    right: -10px;
+    right: -20px;
   }
 
 }
