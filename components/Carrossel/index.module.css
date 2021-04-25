@@ -2,6 +2,7 @@
   background: var(--background-light);
   padding: 40px;
   margin: 40px auto;
+  overflow: hidden;
 }
 
 .depoimentos h3 {
@@ -32,7 +33,6 @@
 .carouselProvider {
   position: relative;
   height: 440px;
-  overflow-y: hidden;
 }
 
 .slideItem {
@@ -148,7 +148,7 @@
   }
 
   .button {
-    top: 60%;
+    top: 61%;
   }
 
   .button.prev {

@@ -56,8 +56,8 @@
 
   .item:last-child img {
     margin-left: -48px;
-    transform: scale(1.1);
-    width: 100%;
+    transform: scale(1.2);
+    max-width: 100%;
     height: 100%;
   }
 }
