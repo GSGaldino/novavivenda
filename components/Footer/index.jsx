@@ -1,4 +1,4 @@
-import { Typography } from '@material-ui/core';
+import { Link, Typography } from '@material-ui/core';
 import Provider from '../Provider';
 
 import styles from './index.module.css';
@@ -28,7 +28,20 @@ export default function Footer() {
                 <img src="/youtube.svg" alt="Ícone facebook" />
               </div>
             </div>
+
+            <Link 
+              href="https://api.whatsapp.com/send?phone=551158518889" 
+              target="_blank"
+            >
+              <div className={styles.whatsapp}>
+                <img src="/whatsapp.svg" alt="Ícone whatsapp" />
+                <Typography component="p">
+                  (11) 5851-8889
+                </Typography>
+              </div>
+            </Link>
           </div>
+
         </div>
 
         <div className={styles.posFooter}>

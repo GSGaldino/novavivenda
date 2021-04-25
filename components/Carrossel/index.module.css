@@ -3,6 +3,7 @@
   padding: 40px;
   margin: 40px auto;
   overflow: hidden;
+  margin-top: -40px;
 }
 
 .depoimentos h3 {
@@ -131,7 +132,7 @@
   .slideItem {
     flex-direction: column;
     width: 100%;
-    height: 1000px;
+    height: 900px;
   }
 
   .slideItem .thumb {
@@ -141,6 +142,7 @@
   .slideItem .content {
     padding: 20px 10px;
     width: 100%;
+    height: 100%;
   }
 
   .slideItem .content div:nth-child(2){

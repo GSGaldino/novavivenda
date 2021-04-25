@@ -28,6 +28,16 @@
   filter: brightness(250%);
 }
 
+.footer .whatsapp {
+  display: flex;
+  align-items: center;
+}
+
+.footer .whatsapp p {
+  margin-left: 10px;
+  color: var(--text-color);
+}
+
 .posFooter:before {
   content: '';
   display: block;
@@ -58,6 +68,11 @@
 
   .footer .item p {
     margin-top: 26px;
+  }
+
+  .footer .whatsapp img {
+    margin-top: 20px;
+    margin-left: 20px;
   }
 
   .posFooter:before {
