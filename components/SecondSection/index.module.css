@@ -58,6 +58,6 @@
     margin-left: -48px;
     transform: scale(1.2);
     max-width: 100%;
-    height: auto;
+    max-height: 430px;
   }
 }
