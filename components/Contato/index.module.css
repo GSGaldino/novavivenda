@@ -39,3 +39,22 @@
   margin-top: -40px;
   margin-left: 20px;
 }
+
+@media screen and (max-width: 767px){
+  .contato {
+    padding: 10px;
+  }
+
+  .contato:before {
+    background-size: 100%;
+  }
+
+  .flexSection {
+    flex-direction: column;
+    max-height: none;
+  }
+
+  .flexSection .item:last-child {
+    display: none;
+  }
+}

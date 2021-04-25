@@ -202,11 +202,7 @@ export default function Popup(props) {
               <FormControlLabel
                 value="end"
                 control={<Checkbox color="primary" />}
-                label={<p style={{
-                  color: "#1B2021",
-                  fontSize: "14px",
-                  lineHeight: "18px"
-                }}>Aceito receber novas mensagem da Nova vivenda</p>}
+                label={<p className={styles.checkboxLabel}>Aceito receber novas mensagem da Nova vivenda</p>}
                 labelPlacement="end"
                 style={{marginTop: "10px"}}
               />

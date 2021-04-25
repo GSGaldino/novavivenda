@@ -50,3 +50,17 @@
   font-size: 14px;
   color: var(--text-color);
 }
+
+@media screen and (max-width: 767px){
+  .footer .flexSection {
+    flex-direction: column;
+  }
+
+  .footer .item p {
+    margin-top: 26px;
+  }
+
+  .posFooter:before {
+    margin: 20px auto;
+  }
+}

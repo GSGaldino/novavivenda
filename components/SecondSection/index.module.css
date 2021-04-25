@@ -35,6 +35,7 @@
   .secondSection {
     margin: 0px;
     padding: 10px;
+    margin-bottom: -40px;
   }
 
   .item h3 {
@@ -45,5 +46,16 @@
   .item h3.primary {
     margin-top: 40px;
     
+  }
+
+  .item:last-child {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .item:last-child img {
+    margin-left: -48px;
+    transform: scale(1.1);
   }
 }

@@ -67,4 +67,11 @@
     flex-direction: column-reverse !important;
   }
 
+  .depoimentos h3 {
+    font-size: 30px;
+    line-height: 4.5rem;
+    text-align: left;
+    margin-top: 20px;
+  }
+
 }
