@@ -73,7 +73,14 @@ export default function Popup(props) {
       ]
     }
 
-    try {
+    setTimeout(() => {
+      setLoading(false);
+      setSuccess(true);
+      setFields({...fields, profile: ''})
+      event.target.reset();
+    }, 2000)
+
+    /* try {
       const response = await fetch("https://api.hsforms.com/submissions/v3/integration/submit/6331207/ee38b1fd-e826-447a-942b-64e9c6ad30dc", {
         method: "post",
         headers: {
@@ -99,7 +106,7 @@ export default function Popup(props) {
       setLoading(false);
       setFailed(true);
       return
-    }
+    } */
   }
 
   return (
@@ -145,8 +152,8 @@ export default function Popup(props) {
                       "Quero ser arquiteto da causa e empreender com a Nova vivenda",
                       "Quero fornecer materiais para a Nova vivenda",
                       "Quero saber mais sobre a nova vivenda"
-                    ].map(item => (
-                      <MenuItem value={item}>{item}</MenuItem>
+                    ].map((item, index) => (
+                      <MenuItem key={index} value={item}>{item}</MenuItem>
                     ))
                   }
                 </Select>
@@ -250,7 +257,7 @@ export default function Popup(props) {
           }
         >
           <AlertTitle>Sucesso!</AlertTitle>
-          Formulário enviado com sucesso! Em breve entraremos em contato.
+          Mensagem enviada com sucesso!
         </Alert>
       </Collapse>}
 

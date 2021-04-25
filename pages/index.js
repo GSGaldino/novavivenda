@@ -2,6 +2,7 @@ import Head from 'next/head';
 
 import Main from '../components/Main';
 import SecondSection from '../components/SecondSection';
+import Carrossel from '../components/Carrossel';
 import Contato from '../components/Contato';
 import Footer from '../components/Footer';
 
@@ -12,10 +13,11 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Nova vivenda | A conexão transforma</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <Main />
       <SecondSection />
+      <Carrossel />
       <Contato />
       <Footer />
       

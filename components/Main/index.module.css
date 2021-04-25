@@ -40,3 +40,31 @@
 .item .button:hover {
   box-shadow: var(--left-box-shadow);
 }
+
+@media screen and (max-width: 767px){
+  .main {
+    background-size: 100%;
+    padding: 10px;
+  }
+
+  .item:first-child {
+    width: 100%;
+  }
+
+  .item h3 {
+    font-size: 34px;
+    line-height: 48px;
+  }
+
+  .item h3:first-child {
+    margin-top: 180px;
+  }
+
+  .item p {
+    margin: 20px auto;
+  }
+
+  .item .button {
+    width: 100%;
+  }
+}

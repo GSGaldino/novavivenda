@@ -5,7 +5,7 @@ import styles from './index.module.css';
 
 export default function Contato() {
   return (
-    <div className={styles.contato}>
+    <div className={styles.contato} id="contato">
       <Provider>
         <h3>Contato</h3>
         <div className={styles.flexSection}>

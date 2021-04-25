@@ -31,6 +31,7 @@ export default function Main() {
                 variant="contained"
                 size="large"
                 className={styles.button}
+                href="#contato"
               >
                 Saiba mais
               </Button>

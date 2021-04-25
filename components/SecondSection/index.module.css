@@ -1,5 +1,6 @@
 .secondSection {
   margin-top: -10px;
+  margin-bottom: -80px;
 }
 
 .item:first-child {
@@ -28,4 +29,21 @@
 .item img {
   position: relative;
   max-width: 100%;
+}
+
+@media screen and (max-width: 767px){
+  .secondSection {
+    margin: 0px;
+    padding: 10px;
+  }
+
+  .item h3 {
+    font-size: 34px;
+    line-height: 48px;
+  }
+
+  .item h3.primary {
+    margin-top: 40px;
+    
+  }
 }

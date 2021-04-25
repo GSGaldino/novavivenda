@@ -1,0 +1,70 @@
+.depoimentos {
+  background: var(--background-light);
+  padding: 40px;
+  margin: 20px auto;
+}
+
+.depoimentos h3 {
+  font-family: "Lemonmilk Bold";
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 4.5rem;
+  color: var(--primary-color);
+  text-align: center;
+  margin: 20px auto;
+}
+
+.testimony {
+  cursor: default;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.testimony .title {
+  text-align: right;
+}
+
+.testimony .title h6 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.carouselProvider {
+  position: relative;
+}
+
+.button:selected,
+.button:active,
+.button:focus {
+  border: none;
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  background: var(--white-light);
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 25px 50px -12px;
+  color: var(--primary-color);
+}
+
+.button.next {
+  right: 0;
+}
+
+.button.prev {
+  left: 0;
+}
+
+@media screen and (max-width: 800px){
+  .depoimentos {
+    padding: 40px 20px;
+  }
+
+  .testimonial {
+    flex-direction: column-reverse !important;
+  }
+
+}
