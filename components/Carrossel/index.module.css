@@ -1,9 +1,12 @@
 .depoimentos {
-  background: var(--background-light);
   padding: 40px;
   margin: 40px auto;
   overflow: hidden;
   margin-top: -40px;
+  background: url('/carousel-bg.png');
+  background-position: top left;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .depoimentos h3 {
@@ -33,19 +36,21 @@
 
 .carouselProvider {
   position: relative;
-  height: 440px;
+  height: 600px;
 }
 
 .slideItem {
   display: flex;
-  box-shadow: var(--left-box-shadow);
   width: 90%;
   margin: 0 auto;
+  justify-content: space-between;
+  background: transparent;
+  height: 600px;
 }
 
 .slideItem .thumb {
   margin-bottom: -4px;
-  width: 30%;
+  width: 45%;
 }
 
 .slideItem .thumb img {
@@ -56,32 +61,39 @@
 }
 
 .slideItem .content{
-  background: var(--white-light);
+  background: var(--primary-color);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 40px 20px;
+  padding: 40px;
   align-items: flex-start;
   text-align: left;
-  width: 70%;
+  width: 52%;
+  color: var(--white-light);
+}
+
+.slideItem .content p {
+  font-size: 21px;
 }
 
 .slideItem .content h3 {
   margin: 0px auto;
   line-height: 42px;
   text-align: left;
+  color: var(--white-light);
 }
 
 .slideItem .content h3:first-child {
-  color: #5C6264;
+  color: var(--white-light);
+  font-size: 20px;
 }
 
 .slideItem .footer p {
-  color: var(--primary-color);
+  color: var(--white-light);
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   margin-top: 8px;
-  font-size: 18px;
+  font-size: 21px;
 }
 
 .button:selected,
@@ -112,6 +124,8 @@
 @media screen and (max-width: 800px){
   .depoimentos {
     padding: 40px 20px;
+    background-position: top right;
+    background-size: cover;
   }
 
   .testimonial {
@@ -126,7 +140,7 @@
   }
 
   .carouselProvider {
-    height: 900px;
+    height: 1080px;
   }
 
   .slideItem {
@@ -142,7 +156,6 @@
   .slideItem .content {
     padding: 20px 10px;
     width: 100%;
-    height: 100%;
   }
 
   .slideItem .content div:nth-child(2){

@@ -14,9 +14,19 @@
   margin: 10px auto;
 }
 
+.footer .item h3 {
+  font-family: "Lemonmilk Bold";
+  font-weight: 900;
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--text-color);
+}
+
 .footer .social {
   display: flex;
   justify-content: space-between;
+  max-width: 200px;
+  margin: 20px auto;
 }
 
 .footer .social img {
@@ -31,9 +41,10 @@
 .footer .whatsapp {
   display: flex;
   align-items: center;
+  margin: 20px auto;
 }
 
-.footer .whatsapp p {
+.footer .whatsapp h3 {
   margin-left: 10px;
   color: var(--text-color);
 }
@@ -66,8 +77,18 @@
     flex-direction: column;
   }
 
+  .footer .item {
+    margin: 20px auto;
+    text-align: center;
+  }
+
   .footer .item p {
     margin-top: 26px;
+  }
+
+  .footer .whatsapp {
+    display: flex;
+    justify-content: center;
   }
 
   .footer .whatsapp img {

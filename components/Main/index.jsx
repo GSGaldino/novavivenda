@@ -23,23 +23,13 @@ export default function Main() {
               </h3>
 
               <Typography component="p">
-                A Nova Vivenda é uma plataforma de conexões geradora de soluções para que todos, sem exceções, tenham acesso a moradias dignas, seguras e confortáveis.
+                A Nova Vivenda é uma <strong>plataforma de conexões geradora de soluções</strong> para que todos, sem exceções, tenham acesso a moradias dignas, seguras e confortáveis.
               </Typography>
 
-              <Button
-                color="primary"
-                variant="contained"
-                size="large"
-                className={styles.button}
-                href="#contato"
-              >
-                Saiba mais
-              </Button>
             </div>
           </div>
 
           <div className={styles.item}>
-
           </div>
 
         </Section>
