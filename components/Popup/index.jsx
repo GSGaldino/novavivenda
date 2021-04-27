@@ -25,7 +25,7 @@ import styles from './index.module.css';
 
 export default function Popup(props) {
   const [loading, setLoading] = React.useState(false);
-  const [success, setSuccess] = React.useState(false);
+  const [successText, setSuccessText] = React.useState('');
   const [failed, setFailed] = React.useState(false);
   const [fields, setFields] = React.useState({
     profile: ''
@@ -44,25 +44,24 @@ export default function Popup(props) {
   const handleSubmit = async event => {
     setLoading(true);
     event.preventDefault();
-    const { nome_completo, city, company, email, mensagem, mobilephone } = fields;
+    const { nome_completo, profile, email, cep, mobilephone, checkbox } = fields;
     const templateParams = {
       name: nome_completo,
-      message: 'Check this out!'
+      profile: profile,
+      email: email,
+      cep: cep,
+      mobilephone: mobilephone,
+      checkbox: checkbox
     };
+
     emailjs.init("user_xs0Z3XsGEQFbifdA0Ak0O");
     emailjs.send('default_service', 'template_4ycy9vo', templateParams)
       .then(function (response) {
-        console.log('SUCCESS!', response.status, response.text);
+        setSuccessText('✓ Mensagem enviada com sucesso!')
       }, function (error) {
         console.log('FAILED...', error);
       });
 
-    setTimeout(() => {
-      setLoading(false);
-      setSuccess(true);
-      setFields({ ...fields, profile: '' })
-      event.target.reset();
-    }, 2000)
   }
 
   return (
@@ -117,7 +116,7 @@ export default function Popup(props) {
                 margin="dense"
                 onChange={handleChange}
                 style={{ marginRight: '6px' }}
-                name="company"
+                name="cep"
                 required
               />
             </Grid>
@@ -143,17 +142,19 @@ export default function Popup(props) {
                 margin="dense"
                 onChange={handleChange}
                 style={{ marginRight: '6px' }}
-                name="company"
+                name="email"
                 required
               />
             </Grid>
             <Grid item xs={6}>
               <FormControlLabel
-                value="end"
+                value="checkbox"
                 control={<Checkbox color="primary" />}
                 label={<p className={styles.checkboxLabel}>Aceito receber novas mensagem da Nova vivenda</p>}
                 labelPlacement="end"
+                name="checkbox"
                 style={{ marginTop: "10px" }}
+                onChange={e => setFields({...fields, checkbox: e.target.checked})}
               />
             </Grid>
             <Grid item xs={6} style={{ margin: '10px auto' }}>
@@ -167,9 +168,11 @@ export default function Popup(props) {
                 style={{
                   position: 'relative',
                   fontWeight: 600,
-                  color: 'var(--background-light)'
+                  color: 'var(--background-light)',
+                  fontFamily: "Lemonmilk Bold",
+                  borderRadius: "0px"
                 }}
-              >SAIBA MAIS
+              >ENVIAR
                   {loading &&
                   <CircularProgress
                     size={24}
@@ -184,6 +187,11 @@ export default function Popup(props) {
           </Grid>
 
         </form>
+
+        <p style={{
+          fontFamily: 'sans-serif',
+          marginBottom: "20px"
+        }}>{successText}</p>
       </div>
 
       {isPageFullyLoaded && <Collapse in={success} className={styles.successMessage} >
@@ -226,6 +234,7 @@ export default function Popup(props) {
           Desculpe, houve um erro. Tente novamente.
         </Alert>
       </Collapse>}
+
     </>
   )
 }

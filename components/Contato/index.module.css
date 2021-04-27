@@ -30,14 +30,15 @@
 .flexSection {
   display: flex;
   justify-content: space-between;
-  max-height: 460px;
+  max-height: 580px;
   overflow: hidden;
   box-shadow: var(--left-box-shadow);
 }
 
 .flexSection .item:last-child img{
-  margin-top: -40px;
   margin-left: 20px;
+  object-fit: cover;
+  height: 100%;
 }
 
 @media screen and (max-width: 767px){

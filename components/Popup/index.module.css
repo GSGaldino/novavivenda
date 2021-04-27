@@ -5,7 +5,7 @@
   box-shadow: var(--left-box-shadow);
   border-radius: 2px;
   margin: 0 auto;
-  height: 580px;
+  height: 680px;
 }
 
 .popup label {
@@ -37,6 +37,10 @@
 }
 
 @media screen and (max-width: 767px){
+  .popup {
+    height: 580px;
+  }
+
   .successMessage {
     left: 0px;
     width: 100%;

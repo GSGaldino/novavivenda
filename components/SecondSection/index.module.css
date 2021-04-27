@@ -80,6 +80,7 @@
   .item:last-child img {
     width: 100%;
     max-width: 100%;
+    max-height: 329px;
     position: relative;
   }
 }
