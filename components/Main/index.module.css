@@ -1,9 +1,9 @@
 .main {
-  background: url('/bg-section-2.png');
+  background: url('/main-bg.png');
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position-x: 100%;
   padding-top: 80px;
-  background-size: 54%;
+  background-size: 90%;
 }
 
 .item:first-child {
@@ -11,9 +11,11 @@
 }
 
 .item p {
+  font-family: "Lemonmilk";
   margin: 40px auto;
   color: var(--text-color);
-  font-size: 24px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .item h3 {
@@ -45,8 +47,11 @@
 
 @media screen and (max-width: 767px){
   .main {
-    background-size: 100%;
+    background-size: 220%;
     padding: 10px;
+    background-position-x: 86%;
+    background-position-y: -28%;
+    padding-top: 90px;
   }
 
   .item:first-child {

@@ -7,7 +7,7 @@ export default function SecondSection() {
   return (
     <div className={styles.secondSection}>
       <Provider>
-        <Section>
+        <div className={styles.flexSection}>
 
           <div className={styles.item}>
             <h3 className={styles.primary}>
@@ -19,10 +19,10 @@ export default function SecondSection() {
           </div>
 
           <div className={styles.item}>
-            <img src="/right-pic.png" alt="Família de 4 pessoas sorrindo"/>
+            <img src="/hero.png" alt="Família de 4 pessoas sorrindo"/>
           </div>
 
-        </Section>
+        </div>
       </Provider>
     </div>
   )

@@ -19,6 +19,8 @@ import { Close } from '@material-ui/icons';
 
 import { AlertTitle } from '@material-ui/lab';
 
+import emailjs from 'emailjs-com';
+
 import styles from './index.module.css';
 
 export default function Popup(props) {
@@ -43,70 +45,24 @@ export default function Popup(props) {
     setLoading(true);
     event.preventDefault();
     const { nome_completo, city, company, email, mensagem, mobilephone } = fields;
-    const payload = {
-      "submittedAt": Date.now(),
-      "fields": [
-        {
-          "name": "nome_completo",
-          "value": nome_completo,
-        },
-        {
-          "name": "city",
-          "value": city,
-        },
-        {
-          "name": "company",
-          "value": company,
-        },
-        {
-          "name": "email",
-          "value": email,
-        },
-        {
-          "name": "mensagem",
-          "value": mensagem,
-        },
-        {
-          "name": "mobilephone",
-          "value": mobilephone,
-        }
-      ]
-    }
+    const templateParams = {
+      name: nome_completo,
+      message: 'Check this out!'
+    };
+    emailjs.init("user_xs0Z3XsGEQFbifdA0Ak0O");
+    emailjs.send('default_service', 'template_4ycy9vo', templateParams)
+      .then(function (response) {
+        console.log('SUCCESS!', response.status, response.text);
+      }, function (error) {
+        console.log('FAILED...', error);
+      });
 
     setTimeout(() => {
       setLoading(false);
       setSuccess(true);
-      setFields({...fields, profile: ''})
+      setFields({ ...fields, profile: '' })
       event.target.reset();
     }, 2000)
-
-    /* try {
-      const response = await fetch("https://api.hsforms.com/submissions/v3/integration/submit/6331207/ee38b1fd-e826-447a-942b-64e9c6ad30dc", {
-        method: "post",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(payload),
-      })
-
-      if (response.ok) {
-        event.target.reset();
-        setLoading(false);
-        setSuccess(true)
-
-        return
-      } else {
-        console.log(response)
-        setLoading(false);
-        setFailed(true);
-        return
-      }
-    } catch (error) {
-      console.log(error)
-      setLoading(false);
-      setFailed(true);
-      return
-    } */
   }
 
   return (
@@ -115,9 +71,9 @@ export default function Popup(props) {
         <form onSubmit={handleSubmit}>
           <Grid container spacing={2}>
             <Grid item xs={12}>
+              <label>Nome completo</label>
               <TextField
                 type="text"
-                label="Nome completo"
                 fullWidth
                 variant="outlined"
                 margin="dense"
@@ -127,20 +83,13 @@ export default function Popup(props) {
               />
             </Grid>
             <Grid item xs={12}>
+              <label>Em qual perfil você se encaixa?</label>
               <FormControl className={styles.formControl}>
-                <InputLabel
-                  style={{
-                    margin: "-10px 0px 0px 16px"
-                  }}
-                >
-                  Em qual perfil você se encaixa?
-                </InputLabel>
                 <Select
                   value={fields.profile}
                   onChange={handleChange}
                   variant="outlined"
                   margin="dense"
-                  label="Em qual perfil você se encaixa?"
                   name="profile"
                 >
                   <MenuItem value="">
@@ -160,9 +109,9 @@ export default function Popup(props) {
               </FormControl>
             </Grid>
             <Grid item xs={12}>
+              <label>CEP</label>
               <TextField
                 type="text"
-                label="CEP"
                 fullWidth
                 variant="outlined"
                 margin="dense"
@@ -173,9 +122,9 @@ export default function Popup(props) {
               />
             </Grid>
             <Grid item xs={12}>
+              <label>Telefone</label>
               <TextField
                 type="text"
-                label="Telefone"
                 fullWidth
                 variant="outlined"
                 margin="dense"
@@ -186,9 +135,9 @@ export default function Popup(props) {
               />
             </Grid>
             <Grid item xs={12}>
+              <label>E-mail</label>
               <TextField
                 type="text"
-                label="E-mail"
                 fullWidth
                 variant="outlined"
                 margin="dense"
@@ -204,7 +153,7 @@ export default function Popup(props) {
                 control={<Checkbox color="primary" />}
                 label={<p className={styles.checkboxLabel}>Aceito receber novas mensagem da Nova vivenda</p>}
                 labelPlacement="end"
-                style={{marginTop: "10px"}}
+                style={{ marginTop: "10px" }}
               />
             </Grid>
             <Grid item xs={6} style={{ margin: '10px auto' }}>

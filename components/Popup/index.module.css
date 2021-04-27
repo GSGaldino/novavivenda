@@ -5,7 +5,12 @@
   box-shadow: var(--left-box-shadow);
   border-radius: 2px;
   margin: 0 auto;
-  height: 460px;
+  height: 580px;
+}
+
+.popup label {
+  font-family: "Lemonmilk Bold";
+  color: #747474;
 }
 
 .dialogTitle h2 {

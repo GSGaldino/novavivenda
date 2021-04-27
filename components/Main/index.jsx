@@ -16,10 +16,10 @@ export default function Main() {
           <div className={styles.item}>
             <div>
               <h3 className={styles.primary}>
-                Conexões <br></br>são pontes
+                Conexões <br></br>são pontes.
               </h3>
               <h3 className={styles.secondary}>
-                E pontes servem <br></br> para criar acessos
+                E pontes servem <br></br> para criar acessos.
               </h3>
 
               <Typography component="p">
