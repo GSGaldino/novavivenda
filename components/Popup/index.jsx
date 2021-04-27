@@ -194,47 +194,6 @@ export default function Popup(props) {
         }}>{successText}</p>
       </div>
 
-      {isPageFullyLoaded && <Collapse in={success} className={styles.successMessage} >
-        <Alert
-          action={
-            <IconButton
-              aria-label="close"
-              color="inherit"
-              size="large"
-              onClick={() => {
-                setSuccess(false);
-              }}
-            >
-              <Close fontSize="inherit" />
-            </IconButton>
-          }
-        >
-          <AlertTitle>Sucesso!</AlertTitle>
-          Mensagem enviada com sucesso!
-        </Alert>
-      </Collapse>}
-
-      {isPageFullyLoaded && <Collapse in={failed} className={styles.failedMessage}>
-        <Alert
-          severity="error"
-          action={
-            <IconButton
-              aria-label="close"
-              color="inherit"
-              size="large"
-              onClick={() => {
-                setFailed(false);
-              }}
-            >
-              <Close fontSize="inherit" />
-            </IconButton>
-          }
-        >
-          <AlertTitle>Erro!</AlertTitle>
-          Desculpe, houve um erro. Tente novamente.
-        </Alert>
-      </Collapse>}
-
     </>
   )
 }
