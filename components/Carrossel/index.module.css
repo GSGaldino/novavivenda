@@ -75,6 +75,7 @@
 .slideItem .content p {
   font-size: 20px;
   font-family: "Roboto", sans-serif;
+  line-height: 1.5rem;
 }
 
 .slideItem .content p.title {
@@ -178,7 +179,7 @@
   }
 
   .slideItem .content div:nth-child(2) p{
-    font-size: 21px;
+    font-size: 18px;
     font-weight: 500;
   }
 

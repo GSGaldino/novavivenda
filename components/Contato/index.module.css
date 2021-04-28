@@ -55,7 +55,7 @@
 
   .contato:before {
     background-size: 100%;
-    background: none;
+    background-position: bottom right;
   }
 
   .contato h3 {
