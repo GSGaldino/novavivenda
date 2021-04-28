@@ -12,7 +12,7 @@
 .depoimentos h3 {
   font-family: "Lemonmilk Bold";
   font-weight: 900;
-  font-size: 32px;
+  font-size: 64px;
   line-height: 4.5rem;
   color: var(--primary-color);
   text-align: center;
@@ -73,11 +73,11 @@
 }
 
 .slideItem .content p {
-  font-size: 16px;
+  font-size: 20px;
   font-family: "Roboto", sans-serif;
 }
 
-.slideItem .content p:first-child {
+.slideItem .content p.title {
   font-weight: 600;
   font-size: 21px;
   font-family: "Roboto", sans-serif;
@@ -89,6 +89,7 @@
   line-height: 42px;
   text-align: left;
   color: var(--white-light);
+  font-size: 40px;
 }
 
 .slideItem .content h3:first-child {
@@ -99,8 +100,8 @@
 .slideItem .footer p {
   color: var(--white-light);
   font-family: "Roboto", sans-serif;
-  font-weight: 600;
-  margin-top: 8px;
+  font-weight: 600 !important;
+  margin-top: 4px;
   font-size: 21px;
 }
 

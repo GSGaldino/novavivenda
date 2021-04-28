@@ -22,7 +22,7 @@
 .contato h3 {
   font-family: "Lemonmilk Bold";
   font-weight: 900;
-  font-size: 24px;
+  font-size: 46px;
   line-height: 4.5rem;
   color: var(--primary-color);
 }
@@ -32,11 +32,18 @@
   justify-content: space-between;
   max-height: 580px;
   overflow: hidden;
-  box-shadow: var(--left-box-shadow);
+}
+
+.flexSection .item:first-child {
+  width: 56%;
+}
+
+.flexSection .item:last-child {
+  width: 40%;
 }
 
 .flexSection .item:last-child img{
-  margin-left: 20px;
+  margin-left: 0px;
   object-fit: cover;
   height: 100%;
 }
@@ -48,11 +55,21 @@
 
   .contato:before {
     background-size: 100%;
+    background: none;
+  }
+
+  .contato h3 {
+    text-align: center;
   }
 
   .flexSection {
     flex-direction: column;
     max-height: none;
+  }
+
+  .flexSection .item:first-child {
+    width: 100%;
+    background: #fff;
   }
 
   .flexSection .item:last-child {

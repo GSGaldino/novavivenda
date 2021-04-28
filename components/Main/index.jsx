@@ -19,7 +19,7 @@ export default function Main() {
                 Conexões <br></br>são pontes.
               </h3>
               <h3 className={styles.secondary}>
-                E pontes servem <br></br> para criar acessos.
+                E pontes <br/>servem para criar acessos.
               </h3>
 
               <Typography component="p">

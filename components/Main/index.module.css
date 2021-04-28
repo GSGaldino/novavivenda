@@ -7,22 +7,22 @@
 }
 
 .item:first-child {
-  width: 58%;
+  width: 68%;
 }
 
 .item p {
   font-family: "Lemonmilk";
   margin: 40px auto;
   color: var(--text-color);
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 500;
 }
 
 .item h3 {
   font-family: "Lemonmilk Bold";
   font-weight: 900;
-  font-size: 60px;
-  line-height: 4.5rem;
+  font-size: 79px;
+  line-height: 5.5rem;
 }
 
 .item h3.primary {
@@ -69,6 +69,7 @@
 
   .item p {
     margin: 20px auto;
+    font-size: 16px;
   }
 
   .item .button {

@@ -1,8 +1,6 @@
 .popup {
   padding: 32px 20px;
-  background-color: var(--white-light);
   margin-top: -20px;
-  box-shadow: var(--left-box-shadow);
   border-radius: 2px;
   margin: 0 auto;
   height: 680px;

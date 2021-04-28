@@ -41,7 +41,7 @@ export default function Depoimentos(props) {
         </div>
         <div className={styles.content}>
           <div>
-            <p>{title}</p>
+            <p className={styles.title}>{title}</p>
             <h3>{service}</h3>
             <h3>Nova Vivenda</h3>
           </div>
