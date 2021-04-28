@@ -2,7 +2,7 @@
   background: url('/main-bg.png');
   background-repeat: no-repeat;
   background-position-x: 100%;
-  padding-top: 80px;
+  padding-top: 60px;
   background-size: 90%;
 }
 
@@ -12,17 +12,17 @@
 
 .item p {
   font-family: "Lemonmilk";
-  margin: 40px auto;
+  margin: 22px auto;
   color: var(--text-color);
-  font-size: 24px;
+  font-size: 21px;
   font-weight: 500;
 }
 
 .item h3 {
   font-family: "Lemonmilk Bold";
   font-weight: 900;
-  font-size: 79px;
-  line-height: 5.5rem;
+  font-size: 62px;
+  line-height: 4.5rem;
 }
 
 .item h3.primary {
