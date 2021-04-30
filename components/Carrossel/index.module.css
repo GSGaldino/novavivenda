@@ -133,7 +133,57 @@
   font-size: 80px;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1100px){
+  .slideItem {
+    height: 600px;
+    width: 100%;
+  }
+
+  .slideItem .footer .position .buttons {
+    left: 120px;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .slideItem .content {
+    padding: 10px;
+  }
+
+  .slideItem .footer .position .buttons {
+    margin-top: -76px;
+  }
+
+  .slideItem {
+    flex-direction: column;
+  }
+
+  .slideItem .thumb {
+    width: 100%;
+  }
+
+  .slideItem .thumb img {
+    width: 100%;
+    max-height: 560px;
+  }
+
+  .carouselProvider {
+    height: 960px;
+    width: 100%;
+  }
+
+  .slideItem .content {
+    height: 760px;
+    width: 100%;
+    float: right;
+    padding: 20px;
+  }
+
+  .slideItem .footer .position .buttons {
+    left: 50%;
+  }
+}
+
+@media screen and (max-width: 400px){
   .depoimentos {
     padding: 40px 0px;
     background-position: top right;

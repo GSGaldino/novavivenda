@@ -44,9 +44,9 @@
   line-height: 18px;
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 400px){
   .popup {
-    height:600px;
+    height:610px;
   }
 
   .successMessage {
