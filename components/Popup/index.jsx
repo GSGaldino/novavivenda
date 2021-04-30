@@ -146,44 +146,46 @@ export default function Popup(props) {
                 required
               />
             </Grid>
-            <Grid item xs={6}>
-              <FormControlLabel
-                value="checkbox"
-                control={<Checkbox color="primary" />}
-                label={<p className={styles.checkboxLabel}>Aceito receber novas mensagem da Nova vivenda</p>}
-                labelPlacement="end"
-                name="checkbox"
-                style={{ marginTop: "10px" }}
-                onChange={e => setFields({...fields, checkbox: e.target.checked})}
-              />
-            </Grid>
-            <Grid item xs={6} style={{ margin: '10px auto' }}>
-              <Button
-                disabled={loading}
-                color="primary"
-                type="submit"
-                variant="contained"
-                size="large"
-                fullWidth
-                style={{
-                  position: 'relative',
-                  fontWeight: 600,
-                  color: 'var(--background-light)',
-                  fontFamily: "Lemonmilk Bold",
-                  borderRadius: "0px"
-                }}
-              >ENVIAR
-                  {loading &&
-                  <CircularProgress
-                    size={24}
-                    style={{
-                      position: 'absolute',
-                      left: '50%', color: '#11333D'
-                    }}
-                  />}
-              </Button>
-            </Grid>
 
+            <div className={styles.flexSection}>
+              <div>
+                <FormControlLabel
+                  value="checkbox"
+                  control={<Checkbox color="primary" />}
+                  label={<p className={styles.checkboxLabel}>Aceito receber novas mensagem da Nova vivenda<br />- prometemos mandar só coisa legal 🙂</p>}
+                  labelPlacement="end"
+                  name="checkbox"
+                  style={{ marginTop: "10px" }}
+                  onChange={e => setFields({ ...fields, checkbox: e.target.checked })}
+                />
+              </div>
+              <div>
+                <Button
+                  disabled={loading}
+                  color="primary"
+                  type="submit"
+                  variant="contained"
+                  size="large"
+                  fullWidth
+                  style={{
+                    position: 'relative',
+                    fontWeight: 600,
+                    color: 'var(--background-light)',
+                    fontFamily: "Lemonmilk Bold",
+                    borderRadius: "0px"
+                  }}
+                >ENVIAR
+                  {loading &&
+                    <CircularProgress
+                      size={24}
+                      style={{
+                        position: 'absolute',
+                        left: '50%', color: '#11333D'
+                      }}
+                    />}
+                </Button>
+              </div>
+            </div>
           </Grid>
 
         </form>

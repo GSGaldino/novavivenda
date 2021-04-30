@@ -11,10 +11,10 @@ export default function SecondSection() {
 
           <div className={styles.item}>
             <h3 className={styles.primary}>
-              Nova <br></br>vivenda
+              Nova <br></br>vivenda.
               </h3>
             <h3 className={styles.secondary}>
-              A conexão<br></br>transforma
+              A conexão<br></br>transforma.
             </h3>
           </div>
 

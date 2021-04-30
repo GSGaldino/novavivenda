@@ -28,6 +28,16 @@
   width: 100%;
 }
 
+.flexSection {
+  width: 100%;
+}
+
+.flexSection div:last-child {
+  margin: 10px 0px;
+  width: 50%;
+  float: right;
+}
+
 .checkboxLabel {
   color: #1B2021;
   font-size: 14px;
@@ -36,7 +46,7 @@
 
 @media screen and (max-width: 767px){
   .popup {
-    height: 580px;
+    height:600px;
   }
 
   .successMessage {
