@@ -49,7 +49,7 @@
   max-width: 100%;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 550px){
   .secondSection {
     margin: 40px auto;
     padding: 10px;

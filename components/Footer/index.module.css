@@ -72,7 +72,7 @@
   color: var(--text-color);
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 767px){
   .footer .flexSection {
     flex-direction: column;
     align-items: flex-start;

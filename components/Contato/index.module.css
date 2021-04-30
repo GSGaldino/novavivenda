@@ -48,10 +48,16 @@
   height: 100%;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (min-width: 1400px){
+  .contato::before {
+    background-position-x: 78%;
+  }
+}
+
+@media screen and (max-width: 767px){
   .contato {
     padding: 10px;
-    margin-top: -80px;
+    margin-top: -20px;
   }
 
   .contato:before {

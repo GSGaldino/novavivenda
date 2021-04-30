@@ -45,7 +45,14 @@
   box-shadow: var(--left-box-shadow);
 }
 
-@media screen and (max-width: 400px){
+@media screen and (min-width: 1400px){
+  .main {
+    background-size: contain;
+    background-position-x: 50%;
+  }
+}
+
+@media screen and (max-width: 450px){
   .main {
     background-size: 220%;
     padding: 10px;
