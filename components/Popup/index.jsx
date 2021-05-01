@@ -44,12 +44,28 @@ export default function Popup(props) {
       checkbox: checkbox
     };
 
-    emailjs.init("user_xs0Z3XsGEQFbifdA0Ak0O");
-    emailjs.send('default_service', 'template_4ycy9vo', templateParams)
+    emailjs.init("user_dMmhZ3H0rHrltk4xI88Ob");
+    emailjs.send('default_service', 'template_rfsmd1i', templateParams)
       .then(function (response) {
-        setSuccessText('✓ Mensagem enviada com sucesso!')
+        setSuccessText('✓ Mensagem enviada com sucesso!');
+        setLoading(false);
+        setFields({
+          name: '',
+          profile: '',
+          email: '',
+          cep: '',
+          mobilephone: '',
+        })
       }, function (error) {
         console.log('FAILED...', error);
+        setLoading(false);
+        setFields({
+          name: '',
+          profile: '',
+          email: '',
+          cep: '',
+          mobilephone: '',
+        })
       });
 
   }
