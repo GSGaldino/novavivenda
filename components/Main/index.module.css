@@ -29,9 +29,11 @@
   color: var(--primary-color);
 }
 
-.item h3.secondary {
-  text-shadow: -2px 2px var(--primary-color), -2px -2px var(--primary-color), 2px -2px var(--primary-color), 2px 2px var(--primary-color);
-  color: var(--background-light);
+.item h3.secondary img{
+  width: 580px;  
+  margin: 10px auto;
+  position: relative;
+  max-width: 100%;
 }
 
 .item .button {

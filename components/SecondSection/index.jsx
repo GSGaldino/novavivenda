@@ -11,15 +11,15 @@ export default function SecondSection() {
 
           <div className={styles.item}>
             <h3 className={styles.primary}>
-              Nova <br></br>vivenda.
-              </h3>
+              <img src="/slug2.png" />
+            </h3>
             <h3 className={styles.secondary}>
               A conexão<br></br>transforma.
             </h3>
           </div>
 
           <div className={styles.item}>
-            <img src="/hero.png" alt="Família de 4 pessoas sorrindo"/>
+            <img src="/hero.png" alt="Família de 4 pessoas sorrindo" />
           </div>
 
         </div>

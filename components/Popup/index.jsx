@@ -14,10 +14,6 @@ import {
   FormControlLabel,
   Checkbox
 } from '@material-ui/core';
-import Alert from '@material-ui/lab/Alert';
-import { Close } from '@material-ui/icons';
-
-import { AlertTitle } from '@material-ui/lab';
 
 import emailjs from 'emailjs-com';
 
@@ -26,15 +22,9 @@ import styles from './index.module.css';
 export default function Popup(props) {
   const [loading, setLoading] = React.useState(false);
   const [successText, setSuccessText] = React.useState('');
-  const [failed, setFailed] = React.useState(false);
   const [fields, setFields] = React.useState({
     profile: ''
   })
-  const [isPageFullyLoaded, setisPageFullyLoaded] = React.useState(false);
-
-  React.useEffect(() => {
-    window.onload = () => setisPageFullyLoaded(true)
-  }, [])
 
   const handleChange = event => {
     const { name, value } = event.target;
@@ -69,77 +59,73 @@ export default function Popup(props) {
       <div className={styles.popup} {...props}>
         <form onSubmit={handleSubmit}>
           <Grid container spacing={2}>
+            <label style={{ margin: "px 0px 2px 8px" }}>Nome completo</label>
             <Grid item xs={12}>
-              <label>Nome completo</label>
               <TextField
                 type="text"
                 fullWidth
                 variant="outlined"
-                margin="dense"
                 onChange={handleChange}
                 name="nome_completo"
                 required
               />
             </Grid>
+            <label style={{ margin: "12px 0px 2px 8px" }}>Em qual perfil você se encaixa?</label>
             <Grid item xs={12}>
-              <label>Em qual perfil você se encaixa?</label>
               <FormControl className={styles.formControl}>
                 <Select
                   value={fields.profile}
                   onChange={handleChange}
                   variant="outlined"
-                  margin="dense"
                   name="profile"
+                  native
                 >
                   <MenuItem value="">
                     <em>Vazio</em>
                   </MenuItem>
                   {
-                    [
+                    ["",
                       "Quero comprar a reforma da minha casa com a Nova vivenda",
                       "Quero ser arquiteto da causa e empreender com a Nova vivenda",
                       "Quero fornecer materiais para a Nova vivenda",
                       "Quero saber mais sobre a nova vivenda"
                     ].map((item, index) => (
-                      <MenuItem key={index} value={item}>{item}</MenuItem>
+                      <option key={index} value={item}>{item}</option>
                     ))
                   }
                 </Select>
               </FormControl>
             </Grid>
+            <label style={{ margin: "12px 0px 2px 8px" }}>CEP</label>
             <Grid item xs={12}>
-              <label>CEP</label>
               <TextField
                 type="text"
                 fullWidth
                 variant="outlined"
-                margin="dense"
                 onChange={handleChange}
-                style={{ marginRight: '6px' }}
+                style={{ marginRight: '6px', }}
                 name="cep"
                 required
               />
             </Grid>
+            <label style={{ margin: "12px 0px 2px 8px" }}>Telefone</label>
             <Grid item xs={12}>
-              <label>Telefone</label>
               <TextField
                 type="text"
                 fullWidth
                 variant="outlined"
-                margin="dense"
                 style={{ marginRight: '6px' }}
                 onChange={handleChange}
                 name="mobilephone"
                 required
               />
             </Grid>
+            <label style={{ margin: "12px 0px 2px 8px" }}>E-mail</label>
             <Grid item xs={12}>
-              <label>E-mail</label>
               <TextField
                 type="text"
                 fullWidth
                 variant="outlined"
-                margin="dense"
                 onChange={handleChange}
                 style={{ marginRight: '6px' }}
                 name="email"

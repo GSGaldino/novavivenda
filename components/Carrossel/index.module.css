@@ -100,10 +100,10 @@
 
 .slideItem .footer p {
   color: var(--white-light);
-  font-family: "Roboto", sans-serif;
-  font-weight: 600 !important;
+  font-family: "calibri-7", sans-serif;
+  font-weight: 700 !important;
   margin-top: 4px;
-  font-size: 21px;
+  font-size: 18px;
 }
 
 .slideItem .footer .position h3{
@@ -120,6 +120,7 @@
   margin-top: -70px;
   position: absolute;
   left: 200px;
+  display: flex;
 }
 
 .slideItem .footer .position .buttons button {
@@ -229,6 +230,7 @@
     margin-left: 36px;
     margin-top: -100px;
     z-index: 2;
+    justify-content: center;
   }
 
   .slideItem .content div:nth-child(2){

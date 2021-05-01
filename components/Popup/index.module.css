@@ -3,12 +3,13 @@
   margin-top: -20px;
   border-radius: 2px;
   margin: 0 auto;
-  height: 680px;
+  height: inherit;
 }
 
 .popup label {
   font-family: "Lemonmilk Bold";
-  color: #747474;
+  color: #454545;
+  font-size: 20px;
 }
 
 .dialogTitle h2 {

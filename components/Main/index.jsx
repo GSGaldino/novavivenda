@@ -19,7 +19,8 @@ export default function Main() {
                 Conexões <br></br>são pontes.
               </h3>
               <h3 className={styles.secondary}>
-                E pontes <br/>servem para <br /> criar acessos.
+                <p style={{display: "none"}}>E pontes <br/>servem para <br /> criar acessos.</p>
+                <img src="/slug1.png" alt="E pontes servem para criar acessos"/>
               </h3>
 
               <Typography component="p">

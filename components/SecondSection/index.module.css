@@ -8,8 +8,9 @@
   justify-content: center;
 
   background: url('/splash-bg-second.png');
-  background-size: 76%;
+  background-size: 70%;
   background-position: top right;
+  background-position-y: -40px;
   background-repeat: no-repeat;
   padding: 80px 0px 220px 0px;
   overflow: visible;
@@ -20,11 +21,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-right: -86px;
+  margin-right: -78px;
 }
 
 .item:last-child img {
-  width: 90%;
+  width: 98%;
+  margin-left: 100;
 }
 
 .item h3 {
@@ -39,9 +41,10 @@
   color: var(--primary-color);
 }
 
-.item h3.primary {
-  text-shadow: -2px 2px var(--primary-color), -2px -2px var(--primary-color), 2px -2px var(--primary-color), 2px 2px var(--primary-color);
-  color: var(--background-light);
+.item h3.primary img{
+  width: 380px;
+  position: relative;
+  max-width: 100%;
 }
 
 .item img {
@@ -57,10 +60,9 @@
 
   .flexSection {
     flex-direction: column-reverse;
-    background-size: 140%;
+    background-size: 120%;
     padding: 10px;
-    background-position: center;
-    background-position-y: -80%;
+    background-position: top;
     margin-top: -20px;
     margin-bottom: 0px;
   }
@@ -74,6 +76,10 @@
     margin-top: -20px;
     position: relative;
     z-index: 2;
+  }
+
+  .item h3.primary img {
+    width: 200px;
   }
 
   .item:first-child {
