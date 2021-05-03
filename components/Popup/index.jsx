@@ -75,7 +75,7 @@ export default function Popup(props) {
       <div className={styles.popup} {...props}>
         <form onSubmit={handleSubmit}>
           <Grid container spacing={2}>
-            <label style={{ margin: "0px 0px 2px 8px" }}>Nome completo</label>
+            <label style={{ margin: "0px 0px -8px 8px" }}>Nome completo</label>
             <Grid item xs={12}>
               <TextField
                 type="text"
@@ -87,7 +87,7 @@ export default function Popup(props) {
                 margin="dense"
               />
             </Grid>
-            <label style={{ margin: "12px 0px 2px 8px" }}>Em qual perfil você se encaixa?</label>
+            <label style={{ margin: "0px 0px 0px 8px" }}>Em qual perfil você se encaixa?</label>
             <Grid item xs={12}>
               <FormControl className={styles.formControl}>
                 <Select
@@ -104,7 +104,7 @@ export default function Popup(props) {
                   {
                     ["",
                       "Quero comprar a reforma da minha casa com a Nova vivenda",
-                      "Quero ser arquiteto da causa e empreender com a Nova vivenda",
+                      "Quero ser um player da causa e empreender com a Nova vivenda",
                       "Quero fornecer materiais para a Nova vivenda",
                       "Quero saber mais sobre a nova vivenda"
                     ].map((item, index) => (
@@ -114,7 +114,7 @@ export default function Popup(props) {
                 </Select>
               </FormControl>
             </Grid>
-            <label style={{ margin: "12px 0px 2px 8px" }}>CEP</label>
+            <label style={{ margin: "0px 0px -8px 8px" }}>CEP</label>
             <Grid item xs={12}>
               <TextField
                 type="text"
@@ -127,7 +127,7 @@ export default function Popup(props) {
                 margin="dense"
               />
             </Grid>
-            <label style={{ margin: "12px 0px 2px 8px" }}>Telefone</label>
+            <label style={{ margin: "0px 0px -8px 8px" }}>Telefone</label>
             <Grid item xs={12}>
               <TextField
                 type="text"
@@ -140,7 +140,7 @@ export default function Popup(props) {
                 margin="dense"
               />
             </Grid>
-            <label style={{ margin: "12px 0px 2px 8px" }}>E-mail</label>
+            <label style={{ margin: "0px 0px -8px 8px" }}>E-mail</label>
             <Grid item xs={12}>
               <TextField
                 type="text"
