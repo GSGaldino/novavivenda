@@ -47,24 +47,32 @@ export default function Footer() {
             <h3>Acompanhe nossas <br></br> redes sociais</h3>
             <div className={styles.social}>
               <div>
-                <IconContext.Provider value={iconStyle}>
-                  <FaFacebook />
-                </IconContext.Provider>
+                <a target="_blank" href="https://www.facebook.com/programavivenda">
+                  <IconContext.Provider value={iconStyle}>
+                    <FaFacebook />
+                  </IconContext.Provider>
+                </a>
               </div>
               <div>
-                <IconContext.Provider value={iconStyle}>
-                  <FaInstagram />
-                </IconContext.Provider>
+                <a target="_blank" href="https://www.instagram.com/novavivenda/?hl=pt-br%20">
+                  <IconContext.Provider value={iconStyle}>
+                    <FaInstagram />
+                  </IconContext.Provider>
+                </a>
               </div>
               <div>
-                <IconContext.Provider value={iconStyle}>
-                  <FaYoutube />
-                </IconContext.Provider>
+                <a target="_blank" href="https://www.youtube.com/channel/UCOvt4HpYxrDOUIKfE1YTKpw">
+                  <IconContext.Provider value={iconStyle}>
+                    <FaYoutube />
+                  </IconContext.Provider>
+                </a>
               </div>
               <div>
-                <IconContext.Provider value={iconStyle}>
-                  <FaLinkedin />
-                </IconContext.Provider>
+                <a target="_blank" href="https://www.linkedin.com/company/programa-vivenda/">
+                  <IconContext.Provider value={iconStyle}>
+                    <FaLinkedin />
+                  </IconContext.Provider>
+                </a>
               </div>
             </div>
           </div>
