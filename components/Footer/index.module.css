@@ -17,7 +17,7 @@
 .footer .item h3 {
   font-family: "Lemonmilk Bold";
   font-weight: 900;
-  font-size: 21px;
+  font-size: 20px;
   line-height: 30px;
   color: var(--text-color);
 }
@@ -55,14 +55,14 @@
 }
 
 .posFooter {
-  padding: 20px 10px;
+  padding: 10px 0px;
   text-align: left;
 }
 
 .posFooter p {
   font-size: 15px;
   color: var(--text-color);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 767px){

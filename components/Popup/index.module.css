@@ -47,7 +47,7 @@
 
 @media screen and (max-width: 767px){
   .popup {
-    height:610px;
+    height:inherit;
   }
 
   .successMessage {

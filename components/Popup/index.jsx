@@ -75,7 +75,7 @@ export default function Popup(props) {
       <div className={styles.popup} {...props}>
         <form onSubmit={handleSubmit}>
           <Grid container spacing={2}>
-            <label style={{ margin: "px 0px 2px 8px" }}>Nome completo</label>
+            <label style={{ margin: "0px 0px 2px 8px" }}>Nome completo</label>
             <Grid item xs={12}>
               <TextField
                 type="text"
@@ -84,6 +84,7 @@ export default function Popup(props) {
                 onChange={handleChange}
                 name="nome_completo"
                 required
+                margin="dense"
               />
             </Grid>
             <label style={{ margin: "12px 0px 2px 8px" }}>Em qual perfil você se encaixa?</label>
@@ -95,6 +96,7 @@ export default function Popup(props) {
                   variant="outlined"
                   name="profile"
                   native
+                  margin="dense"
                 >
                   <MenuItem value="">
                     <em>Vazio</em>
@@ -122,6 +124,7 @@ export default function Popup(props) {
                 style={{ marginRight: '6px', }}
                 name="cep"
                 required
+                margin="dense"
               />
             </Grid>
             <label style={{ margin: "12px 0px 2px 8px" }}>Telefone</label>
@@ -134,6 +137,7 @@ export default function Popup(props) {
                 onChange={handleChange}
                 name="mobilephone"
                 required
+                margin="dense"
               />
             </Grid>
             <label style={{ margin: "12px 0px 2px 8px" }}>E-mail</label>
@@ -146,6 +150,7 @@ export default function Popup(props) {
                 style={{ marginRight: '6px' }}
                 name="email"
                 required
+                margin="dense"
               />
             </Grid>
 

@@ -15,7 +15,7 @@ export default function Contato() {
             </div>
           </div>
           <div className={styles.item}>
-            <img src="/engineer.jpg" alt="Engenheiro sorrindo" />
+            <img src="/engineer.png" alt="Engenheiro sorrindo" />
           </div>
         </div>
       </Provider>

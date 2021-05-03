@@ -1,6 +1,6 @@
 :root {
   --background-light: #FFF;
-  --primary-color: #34C1C0;
+  --primary-color: #00B6B2;
   --text-color: #454545;
   --left-box-shadow: rgba(0, 0, 0, 0.4) 0px 25px 50px -12px;
   --white-light: #FBFEF9;
@@ -20,6 +20,14 @@
 	font-weight: normal;
 	font-display: auto;
 	src: url('/fonts/lemonmilk.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'calibri-7';
+	font-style: normal;
+	font-weight: normal;
+	font-display: auto;
+	src: url('/fonts/calibri-7.ttf') format('truetype');
 }
 
 * {

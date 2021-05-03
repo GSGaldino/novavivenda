@@ -71,7 +71,6 @@
 
   .flexSection {
     flex-direction: column;
-    max-height: none;
   }
 
   .flexSection .item:first-child {
